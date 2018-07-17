@@ -14,56 +14,71 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+body {
+    background-color: #00000;
+    white-space:pre;
+    >
+}
 </style>
-<h1>2048 Area</h1>
-
-The classification for the last tourmament was: 
-
+<html>
+<body>
+<h1 style="text-align: center;size: 24"><strong>2048 Arena</strong></h1>
+<div>&nbsp;</div>
+<div style="text-align: center;"><span style="text-decoration: underline;">Welcome to an AI competition for 2048.</span></div>
+<div>&nbsp;</div>
+<div>The base of this competition is the Project 2048 in week 3 of the AI course in edX (Colombia University &ndash; Professor Ansaf Salleb-Aouissi).</div>
+<div>You have to extend on what is the exercise for the course because you have also to code the Computer AI Player. <p></p>You can, of course, use the random player provided. 
+<%= link_to 'To register', new_player_path(@player) %> 
+<p></p>
+<p></p><b>The classification for the last tournament was:</b></div>
 <table>
-    <tr>
-		<th>Place</th>
-        <th>Name</th>
-        <th>Score</th>
-        <th>Tiles Scored</th>
-        <th>Tiles Conceded</th>
-   </th>
-   <tr>
-	<td>1</td>
-	<td>Manuel Lopes</td>
-	<td>6</td>
-	<td>10496</td>
-	<td>1920</td>
-   </tr>
-   <tr>
-	<td>2</td>
-   	<td>João Gonçalves</td>
-	<td>3</td>
-	<td>2752</td>
-	<td>6368</td>
-   </tr>
-   <tr>
-	<td>3</td>
-	<td>José Silva</td>
-	<td>0</td>
-	<td>1056</td>
-	<td>6016</td>
-   </tr>
-</tables>
-
-The rules for 2048 Arena are:
-
-<ul>
-    <li>1.	Each player must load two pieces of code, one for the PlayerAI and the other for the ComputerAI.
-    <li>2.	At the Tournament day every player will play a play a Battle with every other player.
-    <li>3.	Every Battle will constitute of 10 games, in 5 of this games one of the player will play the PlayerAI and the other the computerAI. 
-    <li>4.	In each Game the PlayerAI will receive points equals to the value of the highest tile. Only PlayerAI will receive points.
-    <li>5.	The Battle will be won by the Player that makes more points in total of the 10 games.
-    <li>6.	The winner of each battle will receive 3 point. If there is a tie, each player will receive 1 point.
-    <li>7.	In the end of the Tournament the player with more point is the Champion.
-    <li>8.	The date of the next Tournament is Thursday, 19 of July,2018. Other dates will appear on the site.
-    <li>9.	To participate just go to the site, enter you name and email and you code for PlayerAI and ComputerAI.
-    <li>10.	 class PlayerAI(BaseAI)/function  getMove(self, grid) and class ComputerAI(BaseAI)/function  getMove(self, grid)
-</ul>
-
-<%= link_to 'To register', new_player_path(@player) %> |
+<tbody>
+<tr>
+<th>Place</th>
+<th>Name</th>
+<th>Score</th>
+<th>Tiles Scored</th>
+<th>Tiles Conceded</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Manuel Lopes</td>
+<td>6</td>
+<td>10496</td>
+<td>1920</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Jo&atilde;o Gon&ccedil;alves</td>
+<td>3</td>
+<td>2752</td>
+<td>6368</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Jos&eacute; Silva</td>
+<td>0</td>
+<td>1056</td>
+<td>6016</td>
+</tr>
+</tbody>
+</table>
+<p>The base of this competition is the Project 2048 in week 3 of the AI course in edX (Colombia University &ndash; Professor Ansaf Salleb-Aouissi) The rules for 2048 Arena are:</p>
+<ol>
+<li>Each player must load two pieces of code, one for the PlayerAI and the other for the ComputerAI.</li>
+<li>At the Tournament day every player will play a Battle with every other player.</li>
+<li>Every Battle will constitute of 10 games, in 5 of this games one of the player will play the PlayerAI and the other the computerAI.</li>
+<li>In each Game the PlayerAI will receive points equals to the value of the highest tile. Only PlayerAI will receive points.</li>
+<li>The Battle will be won by the Player that makes more points in total of the 10 games.</li>
+<li>The winner of each battle will receive 3 point. If there is a tie, each player will receive 1 point.</li>
+<li>In the end of the Tournament the player with more point is the Champion.</li>
+<li>The date of the next Tournament is Saturday, 21 of July,2018. Other dates will appear on the site.</li>
+<li>To participate just go to the site, enter you name and email and you code for PlayerAI and ComputerAI.</li>
+<li>The code must follow the sheluten of exercice 3 of AI Edx course: Class PlayerAI(BaseAI)/function getMove(self, grid Class ComputerAI(BaseAI)/function getMove(self, grid)</li>
+<li>I will respect the honour code of the course and I will not read the code of other player, except with explicit approval.</li>
+</ol>
+<p>&nbsp;</p><%= link_to 'To register', new_player_path(@player) %> 
+    
+</body>    
+</html>
 
